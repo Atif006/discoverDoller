@@ -1,7 +1,4 @@
-import styled from "@emotion/styled";
 import { Menu, MenuItem } from "@mui/material";
-// import { style } from "@mui/system";
-import { navData } from "./Data";
 
 const MenuList1 = (props) => {
   console.log(props.data);
@@ -11,7 +8,6 @@ const MenuList1 = (props) => {
       anchorEl={props.condition}
       open={Boolean(props.condition)}
       onClose={() => props.onclose()}
-      // MenuListProps={{ "aria-labelledby": "basic-button" }}
     >
       {props.data
         ? props.data.map((value, ind) => {
