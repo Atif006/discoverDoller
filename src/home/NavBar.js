@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
-import { Menu, MenuItem } from "@mui/material";
 
 import React, { useState } from "react";
 import { navData } from "./Data";
@@ -30,12 +29,9 @@ const NavBar = () => {
   const [childopen, setochildpen] = useState(false);
 
   const [listData, setListData] = useState();
-  const [childIndex, setchildIndex] = useState();
-  const [childArr, setChildArr] = useState();
-  // const handleClick = (event) => {
-  //   setopen(event.currentTarget);
 
-  // };
+  const [childArr, setChildArr] = useState();
+
   const handleClose = () => {
     setopen(false);
   };
@@ -43,7 +39,6 @@ const NavBar = () => {
     setochildpen(false);
   };
   const mouseup = (id, childarr) => {
-    setchildIndex(id);
     setChildArr(childarr);
     setochildpen(true);
   };
